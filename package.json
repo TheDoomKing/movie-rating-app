@@ -1,0 +1,26 @@
+{
+  "name": "movie-rating-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server/server.js",
+    "server": "nodemon server/server.js",
+    "client-install": "cd movie-rating && npm install",
+    "movie-rating": "npm start --prefix movie-rating",
+    "dev": "concurrently \"npm run server\" \"npm run movie-rating\""
+  },
+  "keywords": [],
+  "author": "Arnman Ossi Loko",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "concurrently": "^4.1.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "mongodb": "^3.2.6"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.1"
+  }
+}
